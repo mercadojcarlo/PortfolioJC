@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: red;
+	position: relative;
+}
+
+.gotopbtn {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 40px;
+	right: 50px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-size: 22px;
+	border-radius: 20px;
+
+}
+
+
+
+
+/*-------------------  PAGE1  -------------------*/
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#page1 {
+	background-image: url("images/background2.jpeg");
+	min-height: 100vh;
+}
+
+
+
+
+#me {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 50px;
+
+}
+
+
+a i {
+	color: black;
+}
+
+.relative {
+	/*background-color: red;*/
+	position: relative;
+}
+
+.absolute {
+	/*background-color: green;*/
+	position: absolute;
+	top: 250px;
+	left: 45px;
+}
+
+.relative1 {
+  /*background-color: red;*/
+  position: relative;
+}
+
+.absolute1 {
+  /*background-color: green;*/
+  position: absolute;
+  top: 200px;
+  left: 45px;
+}
+
+
+.butt {
+	margin-bottom: 15vh;
+
+}
+
+.bio{
+	font-family: 'Staatliches', cursive;
+}
+
+
+/*-------------------  PAGE2  -------------------*/
+
+#page2 {
+	background-image: url("images/background3.jpeg");
+	min-height: 100vh;
+}
+
+#zindex{
+	z-index: 10;
+}
+
+/*CSS*/
+#skills2{
+	height: 150px;
+	width: 110px;
+}
+
+/*Bootstrap*/
+#skills3 {
+	height: 170px;
+	width: 170px;
+}
+
+/*JQuery*/
+#skills11 {
+	height: 130px;
+	width: 130px;
+}
+
+/*Php*/
+#skills5 {
+	height: 130px;
+	width: 130px;
+}
+
+#skills1, #skills4, #skills6, #skills7, #skills8, #skills9, #skills0 {
+	height: 150px;
+	width: 150px;
+}
+
+
+#skills1, #skills2, #skills3, #skills4, #skills5, #skills6, #skills7, #skills8, #skills9, #skills0, #skills11{
+	animation-duration: 3s;
+}
+
+
+/*-------------------  PAGE3  -------------------*/
+
+/*-------------------  Jumbotron  -------------------*/
+.jumbotron {
+  background-image: url("https://www.smak.co.za/images/bg.jpg");
+  background-size: 100% 100%;
+  color: #b0bec5;
+  
+}
+
+/* 
+#page3 {
+	min-height: 100vh;
+	width: 100vw;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.projectsko {
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	color: white;
+}
+
+/*-------------------  PRIMARY STRUCTURE -------------------*/
+.parallax-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*------------------- SECTIONS -------------------*/
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+/*section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}*/
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+  background-color: rgba(207,216,220,0.5);
+}
+section.module.content:last-child {
+  margin-bottom: 60px;
+}
+section.module.parallax {
+  padding: 240px 0;
+  background-position: 0 0;
+}
+section.module.parallax h1 {
+  color: #1e1e1e;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+}
+section.module.parallax-1 {
+  background-image: url("images/capstone1.png");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,123,255,0.4);
+  background-blend-mode: screen;
+}
+section.module.parallax-2 {
+  background-image: url("images/capstone2.jpeg");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,123,255,0.4);
+  background-blend-mode: screen;
+}
+section.module.parallax-3 {
+  background-image: url("images/capstone3.jpeg");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,123,255,0.4);
+  background-blend-mode: screen;
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax {
+    padding: 300px 0;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
