@@ -160,6 +160,13 @@ a i {
   
 }
 
+
+
+.jumbotron h1{
+  background-image: url("https://www.smak.co.za/images/bg.jpg");
+  font-size: 100px; 
+  font-family: 'Staatliches', cursive;;
+}
 /* 
 #page3 {
 	min-height: 100vh;
@@ -264,4 +271,22 @@ section.module.parallax-3 {
   section.module.parallax h1 {
     font-size: 160px;
   }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  #skills1, #skills2, #skills3, #skills4, #skills5, #skills6, #skills7, #skills8, #skills9, #skills0, #skills11{
+    height: 90px;
+    width: 90px;
+  }
+
+  #zindex, #icon1, #icon2, #icon3, #iconup {
+    display: none;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 80px;
+  }
+
 }
